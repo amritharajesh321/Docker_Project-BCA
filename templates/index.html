@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Docker Dashboard</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background: linear-gradient(135deg,#101a38,#30205b); color: white; min-height: 100vh; padding: 30px 15px; }
+.container { max-width: 950px; margin: auto; }
+header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 35px; }
+header h2 { font-size: 22px; }
+.badge { background: #164e3b; color: #7df5b5; padding: 9px 15px; border-radius: 20px; font-size: 13px; }
+.hero { text-align: center; margin-bottom: 35px; }
+.hero h1 { font-size: 32px; margin-bottom: 10px; }
+.hero p { color: #c5c8df; }
+.grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 18px; }
+.card { background: #ffffff12; border: 1px solid #ffffff25; border-radius: 14px; padding: 22px; }
+.card h3 { color: #b9a5ff; margin-bottom: 15px; }
+.card p { color: #e0e1ee; margin: 9px 0; font-size: 14px; }
+.status { color: #69efa5 !important; font-weight: bold; }
+.wide { grid-column: span 2; }
+footer { text-align: center; color: #b8bad0; margin-top: 30px; font-size: 13px; }
+@media(max-width:600px) { .grid { grid-template-columns: 1fr; } .wide { grid-column: span 1; } header h2 { font-size: 17px; } }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h2>🐳 DOCKER DASHBOARD</h2>
+<span class="badge">● System Online</span>
+</header>
+<section class="hero">
+<h1>Application Dashboard</h1>
+<p>Containerized Application Deployment and Management</p>
+</section>
+<div class="grid">
+<div class="card">
+<h3>Application Status</h3>
+<p class="status">● Running Successfully</p>
+<p>Flask application is currently running.</p>
+</div>
+<div class="card">
+<h3>Container Information</h3>
+<p>Container: my-flask-container</p>
+<p>Platform: Docker</p>
+<p>Port: 5000</p>
+<p class="status">Status: Running</p>
+</div>
+<div class="card">
+<h3>Database Status</h3>
+<p>PostgreSQL</p>
+<p>Connected Successfully</p>
+<p>Flask application is connected to PostgreSQL.</p>
+</div>
+<div class="card">
+<h3>Deployment Information</h3>
+<p>Deployment: Local</p>
+<p>Platform: Docker Desktop</p>
+<p>AWS EC2: Deployment Pending</p>
+</div>
+<div class="card wide">
+<h3>Technologies Used</h3>
+<p>Python | Flask | Docker | Docker Compose</p>
+<p>PostgreSQL | AWS EC2 | HTML | CSS</p>
+</div>
+</div>
+<footer>Team 14 | BCA Project | 2026</footer>
+</div>
+</body>
+</html>
