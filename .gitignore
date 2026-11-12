@@ -2,3 +2,8 @@
 __pycache__/
 *.pyc
 Docker_Project/
+.env
+__pycache__/
+*.py[cod]
+.venv/
+venv/
